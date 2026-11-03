@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DHR İzin Kitapçığı</title>
+<style>
+  :root { --ink:#1f2430; --muted:#5c6573; --line:#e6e1d8; --paper:#fffdf8; --red:#c0392b; --blue:#1d4e89; --sand:#f6f1e7; }
+  * { box-sizing: border-box; }
+  body { margin:0; color:var(--ink); background:#efeae2; font-family:"Segoe UI", Calibri, Arial, sans-serif; font-size:18px; line-height:1.6; }
+  .wrap { max-width:920px; margin:0 auto; padding:28px 18px 64px; }
+  header.cover, section { background:#fff; border:1px solid var(--line); border-radius:18px; padding:28px 32px; margin:0 0 16px; }
+  header.cover { background:var(--paper); }
+  .kicker { color:var(--red); font-size:13px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; }
+  h1 { font-size:38px; line-height:1.15; margin:8px 0 12px; }
+  h2 { font-size:28px; margin:0 0 12px; }
+  h3 { font-size:22px; margin:20px 0 8px; }
+  p { margin:0 0 12px; }
+  ol, ul { margin:8px 0 0; padding-left:22px; }
+  li { margin:0 0 8px; }
+  .kutu { border-radius:12px; padding:12px 14px; margin:14px 0; }
+  .mavi { background:#f3f7fb; border:1px solid #d5e3f0; }
+  .sari { background:#fff6e8; border:1px solid #f0ddb8; }
+  .yesil { background:#eef8f1; border:1px solid #cfe6d6; }
+  .ad { background:var(--sand); border-radius:6px; padding:1px 6px; font-weight:650; }
+  figure { margin:16px 0 12px; break-inside:avoid; page-break-inside:avoid; }
+  img { display:block; width:100%; max-width:168mm; height:auto; margin:0 auto; border:1px solid var(--line); border-radius:12px; }
+  figcaption { color:var(--muted); font-size:15px; margin-top:6px; }
+  .akis { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:8px 0 4px; }
+  .hap { background:var(--sand); border-radius:999px; padding:8px 12px; font-weight:650; }
+  .ok { color:var(--muted); font-weight:700; }
+  a { color:var(--blue); text-decoration:none; }
+  table { width:100%; border-collapse:collapse; margin-top:8px; font-size:17px; }
+  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { background:var(--sand); }
+  footer { color:var(--muted); font-size:14px; }
+  h2, h3, .mavi, .sari, .yesil, .akis { break-inside:avoid; page-break-inside:avoid; }
+  h2, h3 { break-after:avoid; page-break-after:avoid; }
+  @page { size:A4; margin:14mm 14mm 16mm; }
+  @media print {
+    body { background:#fff; font-size:12pt; line-height:1.45; }
+    .wrap { max-width:none; padding:0; }
+    header.cover, section { border:none; border-radius:0; padding:0 0 4px; margin:0 0 8px; background:#fff; break-inside:auto; page-break-inside:auto; }
+    h1 { font-size:22pt; }
+    h2 { font-size:16pt; margin-top:12px; }
+    h3 { font-size:13pt; }
+    figure { margin:8px 0 12px; }
+    img { max-width:100%; width:168mm; height:auto; }
+    table { font-size:10.5pt; }
+    tr { break-inside:avoid; page-break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="cover">
+  <div class="kicker">DHR</div>
+  <h1>İzin nasıl istenir, nasıl onaylanır</h1>
+  <p>Bu kitapçık, iznin nasıl istendiğini, nasıl onaylandığını ve nasıl reddedildiğini kolayca anlatmak için hazırlandı.</p>
+  <p>İki ayrı yer vardır. Kendi izninizi <strong>Kişisel → İzinlerim</strong> ekranından istersiniz. Başkasının iznini <strong>Yönetim → İzin Yönetimi</strong> ekranından onaylar veya reddedersiniz.</p>
+</header>
+
+<section>
+  <h2>İçindekiler</h2>
+  <ol>
+    <li><a href="#mantik">Kısaca ne olur</a></li>
+    <li><a href="#iste">Kendi izninizi istemek</a></li>
+    <li><a href="#takip">Talebinizin ne durumda olduğunu görmek</a></li>
+    <li><a href="#geri">Fikrinizi değiştirip talebi geri çekmek</a></li>
+    <li><a href="#onay">Gelen izni onaylamak</a></li>
+    <li><a href="#red">Gelen izni reddetmek</a></li>
+    <li><a href="#takilma">Takıldığınız yerler</a></li>
+  </ol>
+</section>
+
+<section id="mantik">
+  <h2>1. Kısaca ne olur</h2>
+  <div class="akis">
+    <span class="hap">Çalışan izin ister</span>
+    <span class="ok">→</span>
+    <span class="hap">Talep beklemede kalır</span>
+    <span class="ok">→</span>
+    <span class="hap">Yönetici onaylar veya reddeder</span>
+  </div>
+  <p>Onaylanan ücretli izin, kişinin o izinden kalan gününden düşer. Reddedilen izin ve geri çekilen izin gün düşürmez.</p>
+  <p>Ücretsiz iznin yanında çoğu zaman 0 görünür. Bu bir arıza değildir. Ücretsiz izin, yıllık izinden gün yemez.</p>
+  <div class="mavi">Soldaki menüde <strong>İzin Yönetimi</strong> yoksa sizin işiniz yalnız kendi izninizi istemektir. Onay düğmesi, talebi size düşen yöneticiye çıkar.</div>
+</section>
+
+<section id="iste">
+  <h2>2. Kendi izninizi istemek</h2>
+  <ol>
+    <li>Ekrana e-posta ve şifrenizle girin.</li>
+    <li>Solda <strong>Kişisel</strong> yazan yeri açın.</li>
+    <li><strong>İzinlerim</strong> satırına tıklayın.</li>
+  </ol>
+  <figure>
+    <img src="gorseller/01-izinlerim.png" alt="İzinlerim ekranı">
+    <figcaption>İzinlerim. Kartlarda kaç gün hakkınız olduğu yazar. Sağ üstte Yeni Talep düğmesi vardır.</figcaption>
+  </figure>
+  <h3>Önce kalan gününüze bakın</h3>
+  <p>Her kart bir izin türüdür. Kartta üç sayı görürsünüz:</p>
+  <ul>
+    <li><strong>Toplam Gün:</strong> size tanımlı hak</li>
+    <li><strong>Kullanılan:</strong> şimdiye kadar kullandığınız</li>
+    <li><strong>Kalan:</strong> hâlâ kullanabileceğiniz gün. Yeşil olan budur</li>
+  </ul>
+  <p>Kartta görünen her tür, izin isterken listede çıkmayabilir. Listede yalnız sizin kullanabileceğiniz türler vardır.</p>
+  <p><span class="ad">Tahmini Bakiye</span> düğmesi, ileride bir günde yaklaşık kaç gününüz kalacağını söyler. Bu kesin sayı değildir. İşiniz veya izin kuralları değişirse sonuç da değişir.</p>
+
+  <h3>Talebi doldurmak</h3>
+  <ol>
+    <li>Sağ üstteki yeşil <span class="ad">Yeni Talep</span> düğmesine basın.</li>
+    <li><strong>İzin Türü</strong> kutusundan iznin adını seçin. Yıllık ücretli izin, mazeret, evlilik, hastalık gibi.</li>
+    <li><strong>Vekil Çalışan</strong> boş kalabilir. İzninizde işinize bakacak biri varsa onu seçin.</li>
+    <li><strong>Tarih Aralığı</strong> kutusuna tıklayın. Açılan takvimden ilk günü ve son günü seçin. Tek gün istiyorsanız iki tarafa da aynı günü seçin.</li>
+    <li><strong>Başlangıç Saati</strong> iznin başladığı saattir. <strong>Bitiş Saati</strong> bittiği saattir. Tam gün için mesainin başını ve sonunu seçin.</li>
+    <li><strong>Çalışma Saati Türü</strong> sizin mesainizdir. Tam gün mü, gece vardiyası mı, size tanımlı olanlar gelir.</li>
+    <li><strong>Açıklama</strong> kutusuna neden izin istediğinizi yazın. Bu kutu boş kalamaz.</li>
+    <li>Mavi <span class="ad">Gönder</span> düğmesine basın. Vazgeçerseniz <span class="ad">İptal</span> deyip çıkın.</li>
+  </ol>
+  <figure>
+    <img src="gorseller/03-yeni-talep.png" alt="Yeni izin talebi penceresi">
+    <figcaption>Yeni izin talebi. Yıldızlı kutular boş bırakılamaz. Vekil çalışan zorunlu değildir.</figcaption>
+  </figure>
+  <div class="sari">
+    <strong>Hastalık / Raporlu İzin</strong> seçince <strong>Ekler</strong> kutusu çıkar ve yanında <strong>Zorunlu</strong> yazar. Raporu <span class="ad">Dosya Yükle</span> ile eklemeden gönderemezsiniz. Yıllık izinde bu kutu çıkmaz.
+  </div>
+  <figure>
+    <img src="gorseller/03b-hastalik.png" alt="Hastalık izninde dosya yükleme">
+    <figcaption>Hastalık izninde rapor dosyası eklenmeden talep gitmez.</figcaption>
+  </figure>
+  <p>Gönderince talebiniz listenin başına düşer ve durumu <strong>Beklemede</strong> olur. Artık onaylayacak kişinin ekranındadır.</p>
+</section>
+
+<section id="takip">
+  <h2>3. Talebinizin ne durumda olduğunu görmek</h2>
+  <p>Yine <strong>İzinlerim</strong> sayfasında, takvimin altında listeniz durur. Üstteki yazılardan birine basarak listeyi daraltabilirsiniz:</p>
+  <ul>
+    <li><strong>Tüm İzin Talepleri:</strong> hepsi</li>
+    <li><strong>Bekleyen Talepler:</strong> henüz bakılmayanlar</li>
+    <li><strong>Onaylanan Talepler:</strong> kabul edilenler</li>
+    <li><strong>Reddedilen Talepler:</strong> geri çevrilenler</li>
+    <li><strong>Değişiklik Onayları:</strong> eski bir izinde sonradan bir değişiklik olduysa ve yeniden bakılması gerekiyorsa burada görünür. Boşsa bekleyen bir değişiklik yoktur</li>
+  </ul>
+  <figure>
+    <img src="gorseller/02-taleplerim.png" alt="İzin taleplerinin listesi">
+    <figcaption>Bekleyen satırda, talebin kimde olduğu yazar. İptal edilmiş satırda bu kişi boştur.</figcaption>
+  </figure>
+  <p>Satırda şunlara bakın:</p>
+  <ul>
+    <li><strong>Mevcut Onaylayan:</strong> talep şu an bu kişide bekliyor.</li>
+    <li><strong>İlerleme:</strong> <em>0/1 adım</em> demek “bir kişi onaylayacak, henüz bakmadı” demektir. Birden fazla kişi onaylıyorsa adım sayısı artar. Sıra bitince talep bir sonrakine geçer.</li>
+    <li><strong>Süre 0.50 gün:</strong> yarım gün. <strong>1 gün</strong> tam gündür.</li>
+    <li>Kalan günün yanında küçük bir üçgen varsa, o izin türünde kullanılabilir gün kalmamıştır.</li>
+  </ul>
+  <p>Satırın sağındaki göz simgesi <strong>Detaylar</strong> penceresini açar. Kim, hangi gün, kaç saat ve onayın kimde beklediği burada yazar. <strong>İzin Günleri Detayı</strong> satırına basarsanız her gün ayrı ayrı görünür.</p>
+  <figure>
+    <img src="gorseller/04-detay.png" alt="İzin detayı ve onay adımı">
+    <figcaption>Alttaki Onay İş Akışı, talebin hangi kişide beklediğini gösterir.</figcaption>
+  </figure>
+</section>
+
+<section id="geri">
+  <h2>4. Fikrinizi değiştirip talebi geri çekmek</h2>
+  <p>Bunu yalnız <strong>beklemede</strong> olan talepte yapabilirsiniz. Onaylanmış veya çoktan iptal edilmiş iznin yanında bu düğme yoktur.</p>
+  <ol>
+    <li>Bekleyen satırın sağındaki kırmızı kareye basın. Adı <span class="ad">Talebi İptal Et</span>.</li>
+    <li>Açılan pencerede izin türünü ve günleri bir daha okuyun.</li>
+    <li>Vazgeçtiyseniz <span class="ad">İptal</span> ile çıkın. Gerçekten geri çekecekseniz kırmızı <span class="ad">Talebi İptal Et</span> düğmesine basın.</li>
+  </ol>
+  <figure>
+    <img src="gorseller/05-iptal.png" alt="İzin talebini iptal etme penceresi">
+    <figcaption>Soldaki İptal, pencereyi kapatır. Sağdaki kırmızı düğme talebi geri çeker.</figcaption>
+  </figure>
+  <p>İşlem bitince durum <strong>İptal Edildi</strong> olur. Yöneticinin ekranında da iptal görünür. O satırda artık onay ve red düğmesi kalmaz.</p>
+</section>
+
+<section id="onay">
+  <h2>5. Gelen izni onaylamak</h2>
+  <p>Solda <strong>Yönetim</strong> yazan yeri açın. <strong>İzin Yönetimi</strong> satırına tıklayın. İlk sekmenin adı <strong>Talepler</strong>dir. Onay işi buradadır.</p>
+  <figure>
+    <img src="gorseller/06-yonetim.png" alt="İzin yönetimi talep listesi">
+    <figcaption>Üstteki renkli kartlar özet sayılardır. Bekleyen satırın sağında yeşil tik ve kırmızı çarpı vardır.</figcaption>
+  </figure>
+  <p>Aradığınız kişiyi üstteki kutuya adıyla veya sicil numarasıyla yazabilirsiniz. <span class="ad">Departmana Göre Filtrele</span> yalnız bir bölümü gösterir. <span class="ad">Filtreleri Temizle</span> aramayı sıfırlar. <strong>Bekleyen Talepler</strong> yazısına basarsanız listede yalnız bakılmamışlar kalır.</p>
+  <p>Tabloda iki durum yan yanadır. <strong>Genel Durum</strong> talebin kendisidir. <strong>Onay Durumu</strong> sizin vereceğiniz karardır. Onaylayan tek kişiyse ikisi aynı görünür.</p>
+  <h3>Tek talebi onaylamak</h3>
+  <ol>
+    <li>Satırdaki günleri, izin türünü ve kalan günü okuyun. Emin değilseniz göz simgesinden <strong>Detaylar</strong>a bakın.</li>
+    <li>Yeşil tikin üzerine gelin. Adı <span class="ad">Onayla</span>dır. Basın.</li>
+    <li>Pencere kişiye, izin türüne ve günlere yeniden bakar. İsterseniz bir not yazarsınız. Not yazmak zorunda değilsiniz.</li>
+    <li>Yeşil <span class="ad">Onayla</span> talebi kabul eder. <span class="ad">İptal</span> hiçbir şey yapmadan pencereyi kapatır.</li>
+  </ol>
+  <div class="yesil">Onaydan sonra talep, Onaylanan Talepler tarafına geçer. Ücretli izinde çalışanın kalan günü, bu iznin süresi kadar azalır.</div>
+  <h3>Birkaç talebi birden onaylamak</h3>
+  <p>Bekleyen izin çoksa, sağ üstteki <span class="ad">Toplu İşlem</span> düğmesine basın. Talepler kişiye göre gruplanır. Bir kişinin satırındaki artı işaretine basınca o kişinin izinleri tek tek açılır. İstemediğiniz kişinin kutusundaki işareti kaldırın. Sonra <span class="ad">Seçilenleri Onayla</span> veya <span class="ad">Seçilenleri Reddet</span> dersiniz. Emin değilseniz <span class="ad">Kapat</span> ile çıkın. Hiçbir karar verilmemiş olur.</p>
+</section>
+
+<section id="red">
+  <h2>6. Gelen izni reddetmek</h2>
+  <ol>
+    <li>Bekleyen satırdaki kırmızı çarpıya basın. Adı <span class="ad">Reddet</span>.</li>
+    <li><strong>Red Sebebi</strong> kutusuna neden kabul etmediğinizi yazın. Bu kutu boş kalamaz. Çalışan bu yazıyı detayda görür.</li>
+    <li>Kırmızı <span class="ad">Reddet</span> düğmesine basın. Vazgeçerseniz <span class="ad">İptal</span> deyin.</li>
+  </ol>
+  <figure>
+    <img src="gorseller/08-red.png" alt="İzin talebini reddetme penceresi">
+    <figcaption>Red penceresi. Sebebi yazmadan kırmızı düğme talebi geri çevirmez.</figcaption>
+  </figure>
+  <p>Reddedilen talep, Reddedilen Talepler tarafına düşer. Kişinin izin hakkından gün gitmez. İsterse yeni bir talep açar.</p>
+  <div class="sari">Yeşil veya kırmızı düğmeye basmadan önce tarihleri bir kez daha okuyun. Onay ve red, kolayca geri alınan bir işlem değildir. İptal edilmiş satırda bu düğmeler zaten yoktur.</div>
+</section>
+
+<section id="takilma">
+  <h2>7. Takıldığınız yerler</h2>
+  <table>
+    <tr><th>Ekranda ne görüyorsunuz</th><th>Ne yaparsınız</th></tr>
+    <tr><td>Durum Beklemede, ilerleme 0/1 adım</td><td>Henüz kimse bakmadı. Mevcut Onaylayan sütunundaki kişiye haber verin.</td></tr>
+    <tr><td>Kalan gün 0 ve yanında üçgen</td><td>O türde kullanılacak gün kalmamış. Ücretsiz izinde bu normaldir.</td></tr>
+    <tr><td>Süre 0.50 gün</td><td>Yarım gün istenmiş.</td></tr>
+    <tr><td>Hastalık izni gönderilmiyor</td><td>Rapor dosyası eksiktir. Dosya Yükle ile ekleyin.</td></tr>
+    <tr><td>Talebi İptal Et yok</td><td>Talep artık beklemede değildir. Onaylı veya iptal edilmiş izin geri çekilmez.</td></tr>
+    <tr><td>Onayla ve Reddet yok</td><td>Bu talep size düşmemiştir ya da satır iptal edilmiştir.</td></tr>
+    <tr><td>Kartta izin var, listede yok</td><td>O tür size açık değildir. Yalnız açılan listedekiler istenir.</td></tr>
+  </table>
+  <h3>Diğer sekmeler</h3>
+  <p>İzin Yönetimi’nde üç sekme daha vardır. Günlük iş için bunlara girmeniz gerekmez.</p>
+  <ul>
+    <li><strong>Ekip İzinleri:</strong> takvimde kim hangi gün izinli, onu gösterir.</li>
+    <li><strong>İzin Bakiyeleri:</strong> her çalışanın kaç gün hakkı kaldığını gösterir. İnsan kaynakları buradan hak günü ekleyebilir veya çalışan adına kullanılmış izin yazabilir.</li>
+    <li><strong>Bakiye Düzeltme:</strong> izin hesaplarını baştan kurar. Yanlışlıkla basılmaması gereken bir yerdir.</li>
+  </ul>
+  <h3>En kısa hali</h3>
+  <ol>
+    <li>Kendi izniniz: Kişisel → İzinlerim → Yeni Talep → tür, gün, saat, açıklama → Gönder.</li>
+    <li>Vazgeçmek: bekleyen satırda Talebi İptal Et.</li>
+    <li>Başkasının izni: Yönetim → İzin Yönetimi → yeşil Onayla ya da kırmızı Reddet.</li>
+    <li>Reddederken sebep yazılır. Onaylarken not yazmak zorunda değilsiniz.</li>
+  </ol>
+</section>
+
+<footer>Bu kitapçık DHR izin ekranına göre hazırlandı. Siteye eklenmiş bir sayfa değildir.</footer>
+
+</div>
+</body>
+</html>
