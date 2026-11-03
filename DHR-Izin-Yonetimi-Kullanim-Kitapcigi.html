@@ -23,8 +23,8 @@
   .sari { background:#fff6e8; border:1px solid #f0ddb8; }
   .yesil { background:#eef8f1; border:1px solid #cfe6d6; }
   .ad { background:var(--sand); border-radius:6px; padding:1px 6px; font-weight:650; }
-  figure { margin:16px 0 12px; break-inside:avoid; page-break-inside:avoid; }
-  img { display:block; width:100%; max-width:168mm; height:auto; margin:0 auto; border:1px solid var(--line); border-radius:12px; }
+  figure { margin:16px 0 12px; }
+  img { display:block; width:100%; height:auto; border:1px solid var(--line); border-radius:12px; }
   figcaption { color:var(--muted); font-size:15px; margin-top:6px; }
   .akis { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:8px 0 4px; }
   .hap { background:var(--sand); border-radius:999px; padding:8px 12px; font-weight:650; }
@@ -34,20 +34,28 @@
   th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
   th { background:var(--sand); }
   footer { color:var(--muted); font-size:14px; }
-  h2, h3, .mavi, .sari, .yesil, .akis { break-inside:avoid; page-break-inside:avoid; }
-  h2, h3 { break-after:avoid; page-break-after:avoid; }
-  @page { size:A4; margin:14mm 14mm 16mm; }
+  @page { size:A4; margin:12mm; }
   @media print {
-    body { background:#fff; font-size:12pt; line-height:1.45; }
+    * { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    body { background:#efeae2; font-size:11.5pt; line-height:1.45; }
     .wrap { max-width:none; padding:0; }
-    header.cover, section { border:none; border-radius:0; padding:0 0 4px; margin:0 0 8px; background:#fff; break-inside:auto; page-break-inside:auto; }
+    header.cover, section {
+      border-radius:14px;
+      padding:7mm 7mm 5mm;
+      margin:0 0 5mm;
+      break-inside:auto;
+      page-break-inside:auto;
+      box-decoration-break:clone;
+      -webkit-box-decoration-break:clone;
+    }
     h1 { font-size:22pt; }
-    h2 { font-size:16pt; margin-top:12px; }
-    h3 { font-size:13pt; }
-    figure { margin:8px 0 12px; }
-    img { max-width:100%; width:168mm; height:auto; }
-    table { font-size:10.5pt; }
-    tr { break-inside:avoid; page-break-inside:avoid; }
+    h2 { font-size:16pt; break-after:avoid; page-break-after:avoid; }
+    h3 { font-size:13pt; break-after:avoid; page-break-after:avoid; }
+    p, li { orphans:3; widows:3; }
+    figure, .mavi, .sari, .yesil, .akis, tr { break-inside:avoid; page-break-inside:avoid; }
+    figure { margin:4mm 0 5mm; }
+    img { width:100%; max-width:100%; height:auto; }
+    table { font-size:10pt; }
   }
 </style>
 </head>
